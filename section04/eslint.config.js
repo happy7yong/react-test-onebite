@@ -23,11 +23,12 @@ export default [
     rules: {
       ...js.configs.recommended.rules,
       ...reactHooks.configs.recommended.rules,
-      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
       'react-refresh/only-export-components': [
         'warn',
         { allowConstantExport: true },
       ],
+      "no-unused-vars":"off", //실제 : 사용하지 않는 변수 확인해주는
+      "react/prop-types":"off", //추가 : React를 안전하게 사용하는
     },
   },
 ]
